@@ -15,19 +15,23 @@ function PackInit()
 
   -- plugins
   -- project navigation
-	add("nvim-telescope/telescope-media-files.nvim")
-	add("nvim-lua/plenary.nvim")
+	add("kyazdani42/nvim-tree.lua")
+	add("kyazdani42/nvim-web-devicons")
+  add("nvim-lua/plenary.nvim")
+  add("nvim-telescope/telescope-media-files.nvim")
 	add("nvim-telescope/telescope.nvim")
 	add("folke/which-key.nvim")
-	add("kyazdani42/nvim-web-devicons")
-	add("kyazdani42/nvim-tree.lua")
 
   -- quality of life
 	add("lewis6991/impatient.nvim")
 	add("nvim-lua/popup.nvim")
 	add("lewis6991/gitsigns.nvim")
+	add("nvim-lualine/lualine.nvim")
+	add("akinsho/bufferline.nvim")
+	add("jiangmiao/auto-pairs")
+  add("Yggdroot/indentLine")
+  add("akinsho/toggleterm.nvim")
   
-
   -- colorscheme
 	add("archseer/colibri.vim")
 	add("sainnhe/everforest")

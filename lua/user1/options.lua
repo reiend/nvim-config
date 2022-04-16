@@ -20,6 +20,8 @@ local options = {
   splitbelow = true,               -- horizontal split go below.
   splitright = true,               -- vertical split go right.
   timeoutlen = 100,                -- time in milliseconds to wait for a mapped sequence to complete.
+  updatetime = 300,                -- faster completion 
+  showmode = false                 -- dont display text mode
 }
 
 -- use options
