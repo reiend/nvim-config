@@ -11,14 +11,17 @@ vim.g.maplocalleader = " "
 
 -- Normal --
 -- Project operation
-keymap("n", "<C-s>", ":w <cr>", opts) -- save file
+keymap("n", "<C-s>", ":w <CR>", opts)     -- save file
+keymap("n", "<leader>w", ":w <CR>", opts) -- save file
 
 -- window navigation
 keymap("n", "<C-h>", "<C-w>h", opts)          -- move to left window
 keymap("n", "<C-j>", "<C-w>j", opts)          -- move to bottom window
 keymap("n", "<C-k>", "<C-w>k", opts)          -- move to top window
 keymap("n", "<C-l>", "<C-w>l", opts)          -- move to right window
-keymap("n", "<leader>e", ":Lex 30<cr>", opts) -- open default file explorer, Netwr
+
+-- default file explorer, netrw
+-- keymap("n", "<leader>e", ":Lex 40<CR>", opts) -- open default file explorer, Netwr
 
 -- Window Resize
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)             -- resize window top
@@ -55,3 +58,8 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)  -- move to left window
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)  -- move to top window
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)  -- move to bottom window
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)  -- move to right window
+
+-- Nvim Tree
+keymap("n", "<C-n>", ":NvimTreeToggle<CR>", opts)      -- Toggling file explorer
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)  -- Toggling file explorer
+keymap("n", "<leader>r", ":NvimTreeRefresh<CR>", opts) -- Refresh File explorer

@@ -13,7 +13,15 @@ function PackInit()
 
 	local add = vim.fn["minpac#add"]
 
-  -- pluins
+  -- plugins
+  
+  -- project navigation
+	add("kyazdani42/nvim-web-devicons")
+	add("kyazdani42/nvim-tree.lua")
+
+  -- utils
+	add("lewis6991/impatient.nvim")
+
   -- colorscheme
 	add("archseer/colibri.vim")
 	add("sainnhe/everforest")
