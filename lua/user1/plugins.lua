@@ -14,13 +14,19 @@ function PackInit()
 	local add = vim.fn["minpac#add"]
 
   -- plugins
-  
   -- project navigation
+	add("nvim-telescope/telescope-media-files.nvim")
+	add("nvim-lua/plenary.nvim")
+	add("nvim-telescope/telescope.nvim")
+	add("folke/which-key.nvim")
 	add("kyazdani42/nvim-web-devicons")
 	add("kyazdani42/nvim-tree.lua")
 
-  -- utils
+  -- quality of life
 	add("lewis6991/impatient.nvim")
+	add("nvim-lua/popup.nvim")
+	add("lewis6991/gitsigns.nvim")
+  
 
   -- colorscheme
 	add("archseer/colibri.vim")
