@@ -24,6 +24,11 @@ lsp_installer.on_server_ready(function(server)
 	 	opts = vim.tbl_deep_extend("force", clangd_opts, opts)
 	 end
 
+	 if server.name == "cmake" then
+	 	local cmake_opts = require("user.lsp.settings.cmake")
+	 	opts = vim.tbl_deep_extend("force", cmake_opts, opts)
+	 end
+
 	 if server.name == "jsonls" then
 	 	local jsonls_opts = require("user.lsp.settings.jsonls")
 	 	opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
