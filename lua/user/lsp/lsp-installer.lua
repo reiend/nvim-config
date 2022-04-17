@@ -64,6 +64,11 @@ lsp_installer.on_server_ready(function(server)
 	 	opts = vim.tbl_deep_extend("force", prosemd_lsp_opts, opts)
 	 end
 
+	 if server.name == "powershel_es" then
+	 	local powershell_es_opts = require("user.lsp.settings.powershell_es_opts")
+	 	opts = vim.tbl_deep_extend("force", powershell_es_opts, opts)
+	 end
+
 	-- This setup() function is exactly the same as lspconfig's setup function.
 	-- Refer to https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
 	server:setup(opts)
