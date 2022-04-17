@@ -10,7 +10,7 @@ end
 local diagnostics = {
   "diagnostics",
   sources = { "nvim_diagnostic" },
-  sections = { "error", "warn" },
+  sections = { "error", "warn", },
   symbols = { error = " ", warn = " " },
   colored = false,
   update_in_insert = false,
@@ -74,7 +74,7 @@ lualine.setup({
   sections = {
     lualine_a = { branch, diagnostics },
     lualine_b = { mode },
-    lualine_c = {},
+    lualine_c = { 'lsp_progress' },
     -- lualine_x = { "encoding", "fileformat", "filetype" },
     lualine_x = { diff, spaces, "encoding", filetype },
     lualine_y = { location },

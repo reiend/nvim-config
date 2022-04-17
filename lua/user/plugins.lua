@@ -1,7 +1,7 @@
 -- Normally this if-block is not needed, because `:set nocp` is done
 -- automatically when .vimrc is found. However, this might be useful
 -- when you execute `vim -u .vimrc` from the command line.
-if compatible then
+if vim.compatible then
   -- `:set nocp` has many side effects. Therefore this should be done
   -- only when "compatible" is set.
   vim.cmd [[ set nocompatible ]]
@@ -50,7 +50,7 @@ function PackInit()
   add("jiangmiao/auto-pairs")
   add("Yggdroot/indentLine")
   add("akinsho/toggleterm.nvim")
-  add("ahmedkhalf/project.nvim")
+  add("arkav/lualine-lsp-progress")
 
   -- colorscheme
   add("archseer/colibri.vim")
@@ -62,7 +62,6 @@ function PackInit()
   add("arcticicestudio/nord-vim")
   add("joshdick/onedark.vim")
   add("rose-pine/neovim")
-
 
 end
 
