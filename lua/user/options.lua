@@ -29,4 +29,4 @@ for key, value in pairs(options) do
   vim.opt[key] = value
 end
 
- vim.cmd[[hi Visual guifg=black guibg=#A2ADD0 gui=none]]
+vim.cmd [[hi Visual guifg=black guibg=#A2ADD0 gui=none]]

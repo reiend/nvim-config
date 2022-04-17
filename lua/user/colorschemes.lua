@@ -1,7 +1,7 @@
 local colorscheme = { 
   colibri = "colibri",
   everforest_dark = "everforest",
-  darkplus = "darkplus",
+  codedark = "codedark",
   bogster = "bogster",
   dracula = "dracula",
   gruvbox = "gruvbox",
@@ -10,6 +10,5 @@ local colorscheme = {
   rosepine = "rose-pine",
 }
 
-vim.cmd [[set termguicolors]]
 vim.cmd [[set background=dark]]
 vim.cmd("colorscheme " .. colorscheme.colibri)
