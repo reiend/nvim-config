@@ -39,6 +39,8 @@ function PackInit()
   add("neovim/nvim-lspconfig") -- enable LSP
   add("williamboman/nvim-lsp-installer") -- simple to use language server installer
   add("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
+  add("nanotee/sqls.nvim") -- improved sql lsp
+
 
   -- quality of life
   add("lewis6991/impatient.nvim")

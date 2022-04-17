@@ -14,6 +14,11 @@ lsp_installer.on_server_ready(function(server)
 	}
 
    -- allow to recognize vim
+	 if server.name == "sqls" then
+	 	local sqls_opts = require("user.lsp.settings.sqls")
+	 	opts = vim.tbl_deep_extend("force", sqls_opts, opts)
+	 end
+
 	 if server.name == "sumneko_lua" then
 	 	local sumneko_opts = require("user.lsp.settings.sumneko_lua")
 	 	opts = vim.tbl_deep_extend("force", sumneko_opts, opts)
