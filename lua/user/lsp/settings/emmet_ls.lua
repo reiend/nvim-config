@@ -4,5 +4,5 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 return {
   cmd = {"emmet-ls.cmd", "--stdio"},
   capabilities = capabilities,
-  filetypes = { "html", "css", "typescriptreact", "javascriptreact" },
+  filetypes = { "html", "css", "typescriptreact", "javascriptreact", "erb" },
 }

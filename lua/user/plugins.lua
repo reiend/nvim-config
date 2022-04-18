@@ -53,6 +53,7 @@ function PackInit()
   add("Yggdroot/indentLine")
   add("akinsho/toggleterm.nvim")
   add("arkav/lualine-lsp-progress")
+  add("tpope/vim-commentary")
 
   -- colorscheme
   add("archseer/colibri.vim")
