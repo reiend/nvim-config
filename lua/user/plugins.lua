@@ -41,7 +41,6 @@ function PackInit()
   add("jose-elias-alvarez/null-ls.nvim") -- for formatters and linters
   add("nanotee/sqls.nvim") -- improved sql lsp
 
-
   -- quality of life
   add("lewis6991/impatient.nvim")
   add("nvim-lua/popup.nvim")
@@ -54,6 +53,9 @@ function PackInit()
   add("akinsho/toggleterm.nvim")
   add("arkav/lualine-lsp-progress")
   add("tpope/vim-commentary")
+
+  -- utils
+  -- add("andweeb/presence.nvim")
 
   -- colorscheme
   add("archseer/colibri.vim")
