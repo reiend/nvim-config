@@ -55,7 +55,7 @@ function PackInit()
   add("tpope/vim-commentary")
 
   -- utils
-  -- add("andweeb/presence.nvim")
+  add("andweeb/presence.nvim")
 
   -- colorscheme
   add("archseer/colibri.vim")
